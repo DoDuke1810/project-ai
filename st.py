@@ -1,16 +1,7 @@
 import streamlit as st
-col1, col2, col3, col4 = st.columns(4)
-
-with col1:
-    st.subheader("A cat")
-
-with col2:
-    st.caption("A dog")
-
-with col3:
-    st.write("An owl")
-
-with col4:
-    st. text('Danh sách')
-
-st.text('This text is outside of column')
+check = st.checkbox('Boy')
+radio = st.radio('Radio', ('Option 1', 'Option 2', 'Option 3'), horizontal=True)
+if st.button('OK'):
+  st.write('Check box:', check)
+  st.write('Radio:', radio, type(radio))
+  
