@@ -1,17 +1,19 @@
 import streamlit as st
+st.title('Bé tập làm toán')
+a = st.number_input('a')
+radio = st.radio(label='Phép toán', options=('+', '-', 'x', ':'), horizontal=True)
+b = st.number_input('b')
+text = st.text_input('Nhập kết quả')
+if st.button('Kiểm tra'):
+    result = a + b
+    if radio == '-':
+        result = a - b
+    elif radio == 'x':
+        result = a * b
+    elif radio == ':':
+        result = a / b
 
-text = st.text_input('Text input', 'Default')
-number = st.number_input('Number input')
-textarea = st.text_area('Text area', '''Hello
-COTAI''')
-
-if st.button('OK'):
-  st.write('text content:', text)
-  st.write('number content:', number)
-  st.write('text area content:', textarea)
-
-check = st.checkbox('Boy')
-radio = st.radio('Radio', ('Option 1', 'Option 2', 'Option 3'), horizontal=True)
-if st.button('OK'):
-  st.write('Check box:', check)
-  st.write('Radio:', radio, type(radio))
+    if result == float(text):
+        st.success('Chính xác')
+    else:
+        st.error(f'Sai rồi, đáp số đúng là {result}')
