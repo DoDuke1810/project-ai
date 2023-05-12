@@ -7,7 +7,7 @@ with col1:
     female = st.checkbox('Nữ')
 
 with col2: 
-    class = st.radio('Khối lớp', ('Tất cả', 'Lớp 10', 'Lớp 11', "Lớp 12"), horizontal=True)
+    radio = st.radio('Khối lớp', ('Tất cả', 'Lớp 10', 'Lớp 11', "Lớp 12"), horizontal=True)
 
 with col3: 
     AI_class = st.selectbox('Phòng', ('Tất cả','A114', 'A115'))
