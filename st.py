@@ -2,9 +2,7 @@ import streamlit as st
 col1, col2, col3, col4 = st.columns(4)
 
 with col1:
-    st.text('Giới tính')
-    male = st.checkbox('Nam')
-    female = st.checkbox('Nữ')
+    gender = st.checkbox('Giới tính',('Nam','Nữ'))
 
 with col2: 
     radio = st.radio('Khối lớp', ('Tất cả', 'Lớp 10', 'Lớp 11', "Lớp 12"), horizontal=True)
