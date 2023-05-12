@@ -5,10 +5,10 @@ with col1:
     st.subheader("A cat")
 
 with col2:
-    st.header("A dog")
+    st.caption("A dog")
 
 with col3:
-    st.header("An owl")
+    st.write("An owl")
 
 with col4:
     st. text('Danh sách')
