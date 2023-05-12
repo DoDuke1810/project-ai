@@ -1,8 +1,8 @@
 import streamlit as st
-col1, col2, col3 = st.columns(3)
+col1, col2, col3, col4 = st.columns(3)
 
 with col1:
-    st.header("A cat")
+    st.subheader("A cat")
 
 with col2:
     st.header("A dog")
