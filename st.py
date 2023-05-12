@@ -2,7 +2,7 @@ import streamlit as st
 col1, col2, col3, col4 = st.columns(4)
 
 with col1:
-    st.subheader('Giới tính')
+    st.text('Giới tính')
     male = st.checkbox('Nam')
     female = st.checkbox('Nữ')
 
