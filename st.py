@@ -7,7 +7,7 @@ with col1:
     female = st.checkbox('Nữ')
 
 with col2: 
-    radio = st.radio('Khối lớp', ('Tất cả', 'Lớp 10', 'Lớp 11', "Lớp 12"), horizontal=True)
+    khoi = st.radio('Khối lớp', ('Tất cả', 'Lớp 10', 'Lớp 11', "Lớp 12"), horizontal=True)
 
 with col3: 
     AI_class = st.selectbox('Phòng', ('Tất cả','A114', 'A115'))
@@ -15,7 +15,7 @@ with col3:
 with col4: 
     times = st.multiselect('Buổi', ['Sáng','Chiều'])
  
-class = st.write('Lớp chuyên')
+lc = st.write('Lớp chuyên')
 cola, colb, colc, cold, cole = st.columns(5)
 with cola:
     math = st.checkbox('Toán')
