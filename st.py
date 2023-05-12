@@ -14,4 +14,21 @@ with col3:
 
 with col4: 
     times = st.multiselect('Buổi', ['Sáng','Chiều'])
-  
+ 
+class = st.write('Lớp chuyên')
+cola, colb, colc, cold, cole = st.columns(5)
+with cola:
+    math = st.checkbox('Toán')
+    literature = st.checkbox('Văn')
+with colb:
+    ly = st.checkbox('Lý')
+    hoa = st.checkbox('Hóa')
+with colc:
+    eng = st.checkbox('Anh')
+    tin = st.checkbox('Tin')
+with cold:
+    su_dia = st.checkbox('Sử Địa')
+    tr_n = st.checkbox('Trung Nhật')
+with cole:
+    th_sn = st.checkbox('TH/SN')
+    diff = st.checkbox('Khác')
