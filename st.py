@@ -1,10 +1,18 @@
 import streamlit as st
+import pandas as pd
+
+df = pd.read_csv('/content/drive/MyDrive/py4ai-score.csv')
+
 col1, col2, col3, col4 = st.columns(4)
 
 with col1:
     gender = st.write('Giới tính')
-    male = st.checkbox('Nam')
-    female = st.checkbox('Nữ')
+    if st.checkbox('Nam'):
+        male = df[df['GENDER']=='M'].value_counts()
+        print(male)
+    if st.checkbox('Nữ'):
+        female = df[df['GENDER']=='F'].value_counts()
+        print(female)
 
 with col2: 
     khoi = st.radio('Khối lớp', ('Tất cả', 'Lớp 10', 'Lớp 11', "Lớp 12"), horizontal=True)
@@ -32,3 +40,5 @@ with cold:
 with cole:
     th_sn = st.checkbox('TH/SN')
     diff = st.checkbox('Khác')
+
+df = pd.read_csv('/content/drive/MyDrive/py4ai-score.csv')
