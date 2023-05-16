@@ -1,9 +1,9 @@
 import streamlit as st
 import pandas as pd
-from google.colab import drive
-drive.mount('/content/drive')
+import numpy as np 
 
-df = pd.read_csv('/content/drive/MyDrive/py4ai-score.csv')
+df = pd.read_csv("py4ai-score.csv", low_memory=False)
+
 
 col1, col2, col3, col4 = st.columns(4)
 
