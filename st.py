@@ -1,5 +1,7 @@
 import streamlit as st
 import pandas as pd
+from google.colab import drive
+drive.mount('/content/drive')
 
 df = pd.read_csv('/content/drive/MyDrive/py4ai-score.csv')
 
