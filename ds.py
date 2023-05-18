@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np 
 
-df = pd.read_csv("py4ai-score.csv", low_memory=False)
+df = pd.read_csv("py4ai-score (2).csv", low_memory=False)
 df['BONUS'].fillna(0, inplace = True)
 for i in range(1, 11):
  df[f"S{i}"].fillna(0, inplace = True)
