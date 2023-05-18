@@ -46,5 +46,3 @@ with cold:
 with cole:
     th_sn = st.checkbox('TH/SN')
     diff = st.checkbox('Khác')
-
-df = pd.read_csv('/content/drive/MyDrive/py4ai-score.csv')
